@@ -1,6 +1,7 @@
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Getter
@@ -8,6 +9,6 @@ import java.util.List;
 public class Banco {
 
 	private String nome;
-	private List<Conta> contas;
+	private List<IConta> contas = new ArrayList<>();
 
 }

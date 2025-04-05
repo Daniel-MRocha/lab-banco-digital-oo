@@ -26,3 +26,11 @@ tasks.register<JavaExec>("runApp") {
     standardOutput = System.out
     errorOutput = System.err
 }
+
+tasks.jar{
+    archiveBaseName.set("BancoApp")
+    archiveVersion.set("0.1")
+    manifest{
+        attributes["Main-Class"] = "Main"
+    }
+}
